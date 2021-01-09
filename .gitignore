@@ -1,0 +1,7 @@
+node_modules/
+.ftpconfig
+config/sounds/archive/
+*.default
+*.DEFAULT
+*.markc
+*.ORIG

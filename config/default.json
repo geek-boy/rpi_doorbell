@@ -1,0 +1,45 @@
+{
+  // Doorbell module configs
+  "doorbell": {
+    // Raspberry PI GPIO pin to detect chime
+    "doorbell_pin_1" : 7,
+    "doorbell_pin_2" : 8,
+    // Period in milliseconds to wait for doorbell chime
+    "chime_period" : 5000,
+
+    // services to notify
+    // **enabled** with a false indicates to not notify that service
+    // **params** are the service specific parameters
+    "services" : {
+      // Facebook parameters (https://developers.facebook.com/docs/messenger-platform/send-messages)
+      "facebook" : {
+        "enabled" : false,
+        "params" : {
+        }
+      },
+      // Push Bullet parameters (https://docs.pushbullet.com/)
+      "pushbullet" : {
+        "enabled" : false,
+        "params" : {
+          // Registered Pushbullet Devices to send to. Note that if this is null then all devices will be sent a note.
+          "devices" : ""
+        }
+      },
+      // SMS Gateway Me (https://smsgateway.me/sms-api-documentation/getting-started)
+      "smsgateway" : {
+        "enabled" : false,
+        "params" : {
+          // Email address used to login and access the SMS Gateway Me API
+          "email" : "add_email_address_here",
+          // Device ID associated with Android device running the app
+          "device_id" : 99999,
+          // Phone numbers to send doorbell messages to
+          "phone": {
+            "+61999999999":true,
+            "+61999999998":false,
+          }
+        }
+      }
+    }
+  }
+}

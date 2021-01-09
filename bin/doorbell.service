@@ -1,0 +1,13 @@
+[Unit]
+Description=Doorbell Listening Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/bin/start_door_bell.sh
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-success
+
+[Install]
+WantedBy=multi-user.target

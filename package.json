@@ -1,0 +1,29 @@
+{
+	"name": "pi-doorbell",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node ./bin/www"
+	},
+	"config": {
+		"port": "3000"
+	},
+	"dependencies": {
+		"@hapi/hoek": "^9.1.1",
+		"body-parser": "^1.19.0",
+		"config": "^3.3.3",
+		"constantinople": "^4.0.1",
+		"cookie-parser": "^1.4.5",
+		"debug": "^4.3.1",
+		"express": "^4.17.1",
+		"morgan": "^1.10.0",
+		"node-forge": "^0.10.0",
+		"onoff": "^6.0.1",
+		"pug": "^3.0.0",
+		"pushbullet": "^2.4.0",
+		"request": "^2.88.2",
+		"serve-favicon": "^2.5.0",
+		"sms-gateway-nodejs": "^0.1.0",
+		"ssh-exec": "^2.0.0"
+	},
+	"private": true
+}
